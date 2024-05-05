@@ -1,0 +1,22 @@
+{
+  "name": "vzero",
+  "version": "1.0.0",
+  "description": "Modern WordPress starter theme build for developers.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "author": "Koen Schipper",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
+}

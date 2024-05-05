@@ -1,0 +1,45 @@
+/*
+Theme Name: V Zero
+Theme URI: https://vzero.tech
+Author: Koen Schipper
+Author URI: https://koenschipper.com
+Description: Modern WordPress starter theme build for developers.
+Version: 1.0.0
+Requires at least: 5.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: vzero
+*/
+
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+// 2. Vendors
+@import 'vendors/normalize';
+
+// 3. Base stuff
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/helpers';
+
+// 4. Layout-related sections
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'layout/content-blocks/text-with-image';
+
+// 5. Components
+@import 'components/button';
+
+// 6. Page-specific styles
+@import 'pages/home';
+
+// 7. Themes
+@import 'themes/default';
+@import 'themes/dark';
