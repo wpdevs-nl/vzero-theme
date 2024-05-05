@@ -17,8 +17,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="container">
-        <?php get_template_part( 'template-parts/header.php' ); ?>
+    <header>
+        <?php get_template_part( 'template-parts/header' ); ?>
     </header>
 
     <main class="main-wrapper container">

@@ -10,7 +10,7 @@
 </main>
 
 <footer>
-    <?php get_template_part( 'template-parts/footer.php' ); ?>
+    <?php get_template_part( 'template-parts/footer' ); ?>
 </footer>
 
 <?php wp_footer(); ?>
