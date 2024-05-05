@@ -38,15 +38,13 @@ $dark-grey: rgb(68, 68, 68) !default;
 /// @type Length
 $max-width: 1280px !default;
 
+/// Section margin
+/// @type Length
+$section-margin: 50px !default;
+
 /// Breakpoints
 $mobile: 320px !default;
 $tablet: 768px !default;
 $laptop: 1024px !default;
 $desktop: 1280px !default;
 $widescreen: 1640px !default;
-
-/// Relative or absolute URL where all assets are served from
-/// @type String
-/// @example scss - When using a CDN
-///   $base-url: 'https://cdn.example.com/assets/';
-$base-url: '/assets/' !default;

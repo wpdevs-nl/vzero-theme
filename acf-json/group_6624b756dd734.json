@@ -150,8 +150,8 @@
                         },
                         {
                             "key": "field_6624b96b0d2b4",
-                            "label": "Image width",
-                            "name": "image_width",
+                            "label": "Ratio",
+                            "name": "ratio",
                             "aria-label": "",
                             "type": "select",
                             "instructions": "",
@@ -163,9 +163,160 @@
                                 "id": ""
                             },
                             "choices": {
-                                "33": "33%",
-                                "50": "50%",
-                                "66": "66%"
+                                "33": "Image 33%\/66% Content",
+                                "50": "Image 50%\/50% Content",
+                                "66": "Image 66%\/33% Content"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6637b4caab569": {
+                    "key": "layout_6637b4caab569",
+                    "name": "text_two_columns",
+                    "label": "Text (two columns)",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6637b4caab56a",
+                            "label": "Content",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 1
+                        },
+                        {
+                            "key": "field_6637b5b6d27c6",
+                            "label": "Left title",
+                            "name": "left_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6637b5c9d27c8",
+                            "label": "Left content",
+                            "name": "left_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6637b5c0d27c7",
+                            "label": "Right title",
+                            "name": "right_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6637b5d3d27c9",
+                            "label": "Right content",
+                            "name": "right_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_6637b4caab56e",
+                            "label": "Settings",
+                            "name": "",
+                            "aria-label": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "left",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_6637b4caab570",
+                            "label": "Ratio",
+                            "name": "ratio",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "33": "33%\/66%",
+                                "50": "50%\/50%",
+                                "66": "66%\/33%"
                             },
                             "default_value": false,
                             "return_format": "value",
@@ -203,5 +354,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1713684919
+    "modified": 1714927083
 }

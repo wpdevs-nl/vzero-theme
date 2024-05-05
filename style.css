@@ -457,3 +457,54 @@ footer .container {
 footer .container p {
   margin: 0;
 }
+
+.text-with-image {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  margin: 50px 0;
+}
+.text-with-image.reverse {
+  flex-direction: row-reverse;
+}
+.text-with-image.w50-50 .content, .text-with-image.w50-50 .image {
+  width: 50%;
+}
+.text-with-image.w66-33 .content {
+  width: 66.67%;
+}
+.text-with-image.w66-33 .image {
+  width: 33.33%;
+}
+.text-with-image.w33-66 .content {
+  width: 33.33%;
+}
+.text-with-image.w33-66 .image {
+  width: 66.67%;
+}
+.text-with-image .image img {
+  width: 100%;
+  height: auto;
+}
+
+.text-two-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+  margin: 50px 0;
+}
+.text-two-columns.w50-50 .content-left, .text-two-columns.w50-50 .content-right {
+  width: 50%;
+}
+.text-two-columns.w66-33 .content-left {
+  width: 66.67%;
+}
+.text-two-columns.w66-33 .content-right {
+  width: 33.33%;
+}
+.text-two-columns.w33-66 .content-left {
+  width: 33.33%;
+}
+.text-two-columns.w33-66 .content-right {
+  width: 66.67%;
+}
