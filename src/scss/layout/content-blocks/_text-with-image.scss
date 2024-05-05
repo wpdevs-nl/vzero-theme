@@ -7,12 +7,26 @@
   gap: 36px;
   margin: $section-margin 0;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   &.reverse {
     flex-direction: row-reverse;
+
+    @include mobile {
+      flex-direction: column-reverse;
+    }
   }
   &.w50-50 {
     .content, .image {
       width: 50%;
+    }
+
+    @include mobile {
+      .content, .image {
+        width: 100%;
+      }
     }
   }
   &.w66-33 {
@@ -22,6 +36,12 @@
     .image {
       width: 33.33%;
     }
+
+    @include mobile {
+      .content, .image {
+        width: 100%;
+      }
+    }
   }
   &.w33-66 {
     .content {
@@ -29,6 +49,12 @@
     }
     .image {
       width: 66.67%;
+    }
+
+    @include mobile {
+      .content, .image {
+        width: 100%;
+      }
     }
   }
 

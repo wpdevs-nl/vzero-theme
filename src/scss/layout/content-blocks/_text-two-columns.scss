@@ -7,9 +7,19 @@
   gap: 36px;
   margin: $section-margin 0;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   &.w50-50 {
     .content-left, .content-right {
       width: 50%;
+    }
+
+    @include mobile {
+      .content-left, .content-right {
+        width: 100%;
+      }
     }
   }
   &.w66-33 {
@@ -19,6 +29,12 @@
     .content-right {
       width: 33.33%;
     }
+
+    @include mobile {
+      .content-left, .content-right {
+        width: 100%;
+      }
+    }
   }
   &.w33-66 {
     .content-left {
@@ -26,6 +42,12 @@
     }
     .content-right {
       width: 66.67%;
+    }
+
+    @include mobile {
+      .content-left, .content-right {
+        width: 100%;
+      }
     }
   }
 }

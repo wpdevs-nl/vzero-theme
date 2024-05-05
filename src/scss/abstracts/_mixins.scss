@@ -54,7 +54,7 @@
   }
 }
 
-@mixin desktop {
+@mixin desktop{
   @media screen and (min-width: $desktop) and (max-width: $widescreen - 1px) {
     @content;
   }

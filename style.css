@@ -464,11 +464,26 @@ footer .container p {
   gap: 36px;
   margin: 50px 0;
 }
+@media screen and (max-width: 400px) {
+  .text-with-image {
+    flex-direction: column;
+  }
+}
 .text-with-image.reverse {
   flex-direction: row-reverse;
 }
+@media screen and (max-width: 400px) {
+  .text-with-image.reverse {
+    flex-direction: column-reverse;
+  }
+}
 .text-with-image.w50-50 .content, .text-with-image.w50-50 .image {
   width: 50%;
+}
+@media screen and (max-width: 400px) {
+  .text-with-image.w50-50 .content, .text-with-image.w50-50 .image {
+    width: 100%;
+  }
 }
 .text-with-image.w66-33 .content {
   width: 66.67%;
@@ -476,11 +491,21 @@ footer .container p {
 .text-with-image.w66-33 .image {
   width: 33.33%;
 }
+@media screen and (max-width: 400px) {
+  .text-with-image.w66-33 .content, .text-with-image.w66-33 .image {
+    width: 100%;
+  }
+}
 .text-with-image.w33-66 .content {
   width: 33.33%;
 }
 .text-with-image.w33-66 .image {
   width: 66.67%;
+}
+@media screen and (max-width: 400px) {
+  .text-with-image.w33-66 .content, .text-with-image.w33-66 .image {
+    width: 100%;
+  }
 }
 .text-with-image .image img {
   width: 100%;
@@ -493,8 +518,18 @@ footer .container p {
   gap: 36px;
   margin: 50px 0;
 }
+@media screen and (max-width: 400px) {
+  .text-two-columns {
+    flex-direction: column;
+  }
+}
 .text-two-columns.w50-50 .content-left, .text-two-columns.w50-50 .content-right {
   width: 50%;
+}
+@media screen and (max-width: 400px) {
+  .text-two-columns.w50-50 .content-left, .text-two-columns.w50-50 .content-right {
+    width: 100%;
+  }
 }
 .text-two-columns.w66-33 .content-left {
   width: 66.67%;
@@ -502,9 +537,19 @@ footer .container p {
 .text-two-columns.w66-33 .content-right {
   width: 33.33%;
 }
+@media screen and (max-width: 400px) {
+  .text-two-columns.w66-33 .content-left, .text-two-columns.w66-33 .content-right {
+    width: 100%;
+  }
+}
 .text-two-columns.w33-66 .content-left {
   width: 33.33%;
 }
 .text-two-columns.w33-66 .content-right {
   width: 66.67%;
+}
+@media screen and (max-width: 400px) {
+  .text-two-columns.w33-66 .content-left, .text-two-columns.w33-66 .content-right {
+    width: 100%;
+  }
 }
