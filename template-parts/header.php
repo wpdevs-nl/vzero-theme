@@ -15,5 +15,8 @@ $menu_args = array(
 <div class="container">
     <div class="logo"><h2><a href="<?php echo esc_url( home_url( '/' ) ); ?>">V Zero</a></h2></div>
 
-    <?php wp_nav_menu( $menu_args ); ?>
+    <div class="menu-wrapper">
+        <?php wp_nav_menu( $menu_args ); ?>
+        <a class="toggle-nav" href="#">&#9776;</a>
+    </div>
 </div>

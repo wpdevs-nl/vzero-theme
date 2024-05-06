@@ -428,19 +428,55 @@ header .container .logo h2 {
 header .container .logo h2 a {
   color: rgb(34, 34, 34);
 }
-header .container nav.main-nav ul {
+header .container .menu-wrapper {
+  display: flex;
+  align-items: center;
+}
+header .container .menu-wrapper nav.main-nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-header .container nav.main-nav ul li {
+header .container .menu-wrapper nav.main-nav ul li {
   display: inline-block;
 }
-header .container nav.main-nav ul li a {
+header .container .menu-wrapper nav.main-nav ul li a {
   color: rgb(34, 34, 34);
   text-decoration: none;
   padding: 10px 15px;
   display: block;
+}
+@media screen and (max-width: 400px) {
+  header .container .menu-wrapper nav.main-nav {
+    display: none;
+  }
+  header .container .menu-wrapper nav.main-nav.open {
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 100%;
+    background-color: rgb(0, 174, 239);
+  }
+  header .container .menu-wrapper nav.main-nav.open ul li {
+    display: block;
+  }
+  header .container .menu-wrapper nav.main-nav.open ul li a {
+    color: rgb(34, 34, 34);
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 1px solid rgb(237, 237, 237);
+  }
+}
+header .container .menu-wrapper .toggle-nav {
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  display: none;
+}
+@media screen and (max-width: 400px) {
+  header .container .menu-wrapper .toggle-nav {
+    display: inline-block;
+  }
 }
 
 footer {

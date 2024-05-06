@@ -69,8 +69,8 @@ add_action( 'after_setup_theme', 'vzero_setup' );
 function vzero_scripts() {
     wp_enqueue_style( 'vzero-style', get_stylesheet_uri(), array(), THEME_VERSION );
 
-    wp_enqueue_script( 'vzero-footer-js', get_template_directory_uri() . '/dist/js/scripts-footer.min.js', array(), THEME_VERSION, true );
-    wp_enqueue_script( 'vzero-header-js', get_template_directory_uri() . '/dist/js/scripts-header.min.js', array(), THEME_VERSION, false );
+    wp_enqueue_script( 'vzero-footer-js', get_template_directory_uri() . '/dist/js/scripts-footer.min.js', array( 'jquery' ), THEME_VERSION, true );
+    wp_enqueue_script( 'vzero-header-js', get_template_directory_uri() . '/dist/js/scripts-header.min.js', array( 'jquery' ), THEME_VERSION, false );
 
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
